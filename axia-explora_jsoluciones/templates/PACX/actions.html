@@ -1,0 +1,93 @@
+<div class="row">
+  <div class="col-9">
+    <h6 class="telefonicaBold"><em class="fas fa-tasks"></em>&nbsp;&nbsp;Acciones</h6>
+    <div id="actions-list"></div>
+  </div>
+  <div class="col-3">
+    <div class="item-button shadow-sm w100p mb-3 text-left" id="action-new" style="float:none; padding-left: 15px;">
+      <div class="row">
+        <div class="col-2"><em class="fas fa-plus-square"></em></div>
+        <div class="col-9 pl-2">Acción</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-9">
+    <div id="action-form">
+      <form id="create-actions">
+        <input type="hidden" name="finding" value="" id="finding_id" class="mandatory"/>
+        <div class="row">
+          <div class="col">
+            <textarea class="form-control mandatory" placeholder="Observación de la acción" name="Observation"></textarea>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="col">
+            <div class="input-group">
+              <input type="text" placeholder="Responsables" id="autocomplete" class="form-control" />
+              <div class="input-group-append">
+                <div class="input-group-text"><em class="fas fa-user-plus"></em></div>
+              </div>
+              <div class="oculto" id="responsable-list"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row mt-1">
+          <div class="col">
+            <div class="input-group">
+              <input readonly class="form-control obliga mandatory fecha fill-other" data-target="accion-fecha-inicio" data-min="0" name="Initial_date" placeholder="Fecha inicio" />
+              <div class="input-group-prepend">
+                <div class="input-group-text"><em class="far fa-calendar-check"></em></div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-group">
+              <input readonly class="form-control obliga mandatory fecha fill-other" data-target="accion-fecha" data-min="0" name="Commitment_date" placeholder="Fecha Compromiso" />
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="far fa-calendar-times"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-group">
+              <input class="form-control mandatory numbers-only" value="0" type="number" name="advance" max="100" min="0" placeholder="Advance" />
+              <div class="input-group-prepend">
+                <div class="input-group-text"><em class="fas fa-percent"></em></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-success btn-block">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="action-detail" class="mt-2"></div>
+  </div>
+  <div class="col-3">
+    <div class="detalle-caja">
+      <div class="row mb-2">
+        <div class="col-2 text-center"><em class="fas fa-adjust"></em></div>
+        <div class="col-9 pl-2 accion-estado" id="action-state">Abierto</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 text-center"><em class="fas fa-calendar-check"></em></div>
+        <div class="col-9 pl-2"><strong>Ini: </strong><span class="accion-fecha-inicio" id="action-initial-date"></span></div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 text-center"><em class="fas fa-calendar-times"></em></div>
+        <div class="col-9 pl-2"><strong>Fin: </strong><span class="accion-fecha" id="action-commitment-date"></span></div>
+      </div>
+      <div class="row">
+        <div class="col-2 text-center"><em class="fas fa-users"></em></div>
+        <div class="col-9 pl-2 accion-users" id="action-users"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-9">
+    <div id="action-tracing"></div>
+  </div>
+</div>
+<div class="pb-5 mb-3"></div>

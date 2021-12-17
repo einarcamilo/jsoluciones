@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora</title>
+  <link rel="stylesheet" href="css/highcharts.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/colores.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/explora.css">
+</head>
+<body>
+  <section id="bannerRotativo"></section>
+  <header class="bgAzulMovistar">
+    <div class="container">
+      <section id="identificacion">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex p-2">
+              <div class="flex-fill f30 textBlanco" id="UserName">¡Hola!</div>
+              <div class="flex-fill text-right">
+                <div class="mt-2" style="margin-right: 48px;" id="accesosDirectos"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <section class="fluid-container bgGris1">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex">
+          <div class="f25 mt-2 mr-1 me-1">
+            <em class="fas btn-home-initial" style='cursor: pointer;'></em>
+          </div>
+          <div class="f25 mt-1 me-1">
+            <em class="fas fa-bars btn-menu-superior" style='cursor: pointer;'></em>
+          </div>
+          <div class="flex-fill">
+            <div class="input-group p-1 mt-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><em class="fa fa-search"></em></span>
+              </div>
+              <input type="text" class="form-control form-control-sm autocomplete-searcher" placeholder="Buscador de temas, ofertas y noticias">
+            </div>
+          </div>
+        </div>
+        <div class="col-2">&nbsp;</div>
+        <div class="col-2 text-center">
+          <div class="mt-2">
+            <div class="btn-searcher btn-history" data-toggle="tooltip" title="Histórico de Pilas" style="display: inline-block;">
+              <img src="img/iconoHistory.png" alt="">
+            </div>
+            
+            <div class="btn-searcher btn-stats" data-toggle="tooltip" title="Estadísticas Asesor" style="display: inline-block;">
+              <img src="img/iconoStats.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-2 text-center bgAzulOscuroMovistar textBlanco f12">
+          <div class="d-flex justify-content-around">
+            <div class="item-indicator item-indicator-green" id="indicadorATiempo"></div>
+            <div class="item-indicator item-indicator-yellow" id="indicadorFueraDeTiempo"></div>
+            <div class="item-indicator item-indicator-red" id="indicadorSinLectura"></div>
+          </div>
+          <div>
+            Mi lecturabilidad
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="position: relative;"><div id="menuVertical"></div></div>
+  <section class="container main-container mbMain main-pilas"></section>
+  <section class="container main-container mbMain main-historico"></section>
+  <section class="container main-container mbMain main-buscador" id="buscador" style="display: none;"></section>
+  <section class="container bgGris1 rounded-bottom mbMain main-menu"></section>
+  <section class="container main-container mbMain main-details"></section>
+  <div class="modal fade" tabindex="-1" role="dialog" id="contenidoAccesoDirecto">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header"></div>
+        <div class="modal-body"></div>
+      </div>
+    </div>  
+  </div>
+  <footer class="fixed-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 grupo offset-2"></div>
+				<div class="col derechos"></div>
+			</div>
+		</div>
+  </footer>
+  <script src="js/jquery.js" ></script>
+  <script src="js/jquery-ui.js" ></script>
+  
+  <script src="js/popper.js" ></script>
+  <script src="js/bootstrap.js" ></script>
+  <script src="js/highcharts.js" ></script>
+  <script src="js/modules/exporting.js"></script>
+  <script src="js/modules/export-data.js"></script>
+  <script src="js/modules/variable-pie.js"></script>
+  <script type="module" src="js/Explora/main.js" ></script>
+  <script src="js/Explora/styles.js" ></script>
+</body>
+</html>

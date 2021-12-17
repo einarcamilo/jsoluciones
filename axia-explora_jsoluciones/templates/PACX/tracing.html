@@ -1,0 +1,28 @@
+<form id="save-tracing">
+  <div class="row">
+    <div class="col-12">
+      <h6 class="telefonicaBold"><em class="fas fa-comment"></em>&nbsp;&nbsp;Nuevo seguimiento</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <textarea name="Observation" id="tracing-observation" rows="5" class="form-control"></textarea>
+    </div>
+    <div class="col-4">
+      <div class="input-group mb-1" id="tracing-advance"></div>
+      <div class="input-group">
+        <select name="state" id="tracing-states" class="custom-select mandatory mb-1"></select>
+      </div>
+      <div class="input-group">
+        <select name="cause" id="tracing-cause" class="custom-select mandatory mb-1"></select>
+      </div>
+      <button class="btn btn-success btn-block"><em class="fa fas-save"></em>&nbsp;Guardar</button>
+    </div>
+  </div>
+</form>
+<div class="row mt-2">
+  <div class="col-12">
+    <h6 class="telefonicaBold"><em class="fas fa-clipboard-list"></em>&nbsp;&nbsp;Seguimientos</h6>
+  </div>
+</div>
+<div id="tracing-list"></div>

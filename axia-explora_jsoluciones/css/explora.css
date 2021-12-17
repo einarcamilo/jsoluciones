@@ -1,0 +1,308 @@
+#menuVertical{
+  position: absolute;
+  width: 36px;
+  background-color: white;
+  border-right: 2px solid rgb(200, 200, 200);
+  padding: 3px;
+}
+
+.banner-explora{
+  height: 170px;
+  width: 100%;
+}
+
+.banner-1{
+  background: url('../imgs/BannerNuevoExplora.jpg') center center no-repeat;
+}
+
+.item-indicator{
+  border:2px solid white;
+  border-radius: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+}
+.item-indicator-green{
+  background-color: green;
+}
+.item-indicator-yellow{
+  background-color: orange;
+}
+.item-indicator-red{
+  background-color: red;
+}
+
+.news-element{
+  border: 1px solid rgb(216, 216, 216);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+}
+
+.col-4, .col-12{
+  padding: 5px !important;
+}
+.bar-icons img{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.col-12 >.card > .card-header{
+  padding: 1px;
+}
+
+.icons-header{
+  position:absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.icons-header div{
+  height: 16px;
+  width: 16px;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.user-name{
+  height: auto !important;
+  width: auto !important;
+}
+.card-header{
+  background-color: rgba(0,0,0,0.08) !important;
+}
+
+.btn-identity{
+  cursor: pointer;
+}
+.btn-identity:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+.btn-aside{
+  cursor: pointer;
+}
+.btn-searcher{
+  cursor: pointer;
+}
+.btn-searcher:hover{
+  background-color: rgba(0,0,0,0.2);
+}
+
+#accordion > .card > .card-header{
+  padding: 5px !important;
+}
+
+#accordion > .card{
+  margin-bottom: 3px !important;
+}
+
+.item-pilas-historico{
+  padding: 3px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+.item-pilas-historico:last-child{
+  border-bottom: none;
+}
+.item-pilas-historico:hover{
+  background-color: rgb(184, 207, 221);
+}
+
+.bar-icons{
+  border-right: 1px solid white;
+  padding: 9px;
+}
+
+.bar-icons:last-child{
+  border-right: none;
+}
+
+.bar-icon-master{
+  font-style: italic;
+}
+.btn-anchoring {
+  cursor: pointer;
+}
+.btn-anchoring.btn-anchoring-active {
+  background-image: url(../img/hiconAttachActive.png);
+}
+.btn-anchoring.btn-anchoring-inactive {
+  background-image: url(../img/hiconAttachInactive.png);
+}
+.hiconFijaActive{
+  background-image: url(../img/hiconFijaActive.png);
+}
+.hiconMovilActive{
+  background-image: url(../img/hiconMovilActive.png);
+}
+.hiconFijaInactive{
+  background-image: url(../img/hiconFijaInactive.png);
+}
+.hiconMovilInactive{
+  background-image: url(../img/hiconMovilInactive.png);
+}
+.main-menu .nav {
+  border-right: 2px solid #ffffff;
+  padding-right: 10px;
+}
+.main-menu .nav-link {
+  cursor: pointer;
+  padding: 2px 10px;
+  text-align: left;
+}
+.icon-fija::before{
+  content: url(../img/icon-fija.png);
+ }
+ .icon-movil::before{
+   content: url(../img/icon-movil.png);
+ }
+ .btn-home-initial::before{
+   content: url(../img/logoMovistarAzul.png);
+ }
+ .menu-search button{
+  padding: 2px 5px;
+  text-align: left;
+ }
+ .menu-search button.active{
+  background-color: #ffffff;
+  color: #00A9E0;
+  text-align: right !important;
+  font-family: TelefonicaTitulo,sans-serif;
+ }
+ .item-search{
+   margin-bottom: 1rem;
+   border-bottom: 1px solid #E9EAE8;
+ }
+ .item-search p,.item-search h6{ 
+   margin-bottom: 0.2rem;
+ }
+ /**Calendar jQuery*/
+.ui-datepicker {
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px #eaeaea;
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+.ui-state-default {
+  border: none;
+  background-color: #00A9E0;
+  font-weight: normal;
+  color: #ffffff;
+}
+.ui-state-highlight {
+  background-color: #A897C4;
+}
+.ui-state-active {
+  background-color: #954B97;
+}
+.ui-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+}
+.ui-icon-circle-triangle-w:before{ content: url(../img/FlechaIzquierda_3Masa.png); }
+.ui-state-disabled .ui-icon-circle-triangle-w:before{ content: url(../img/FlechaIzquierda_1Light.png); }
+.ui-icon-circle-triangle-e:before{ content: url(../img/FlechaDerecha_3Masa.png); }
+.ui-state-disabled .ui-icon-circle-triangle-e:before{ content: url(../img/FlechaDerecha_1Light.png); }
+ /***/

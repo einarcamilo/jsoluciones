@@ -1,0 +1,58 @@
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-10"><h3 class="textAzulMovistar">Modificar usuario <span id="user_name"></span></h3></div>
+            <div class="col-2">
+              <a href="#/Users" id="clic_return" class="btn btn-warning"><em class="fas fa-angle-double-left"></em> Regresar</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <form id="users-edit">
+            <input type="hidden" name="Id" id="user_id" />
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label class="textAzulMovistar">Usuario</label>
+                <input class="form-control mandatory" name="User" id="User" />
+              </div>
+              <div class="form-group col-6">
+                <label class="textAzulMovistar">Nombre</label>
+                <input class="form-control mandatory" name="Name" id="Name" />
+              </div>
+              <div class="form-group col-4">
+                <label class="textAzulMovistar">Correo electrónico</label>
+                <input class="form-control mandatory mail" name="Mail" id="Mail" />
+              </div>
+              <div class="form-group col-4">
+                <label class="textAzulMovistar">Perfil</label>
+                <select class="custom-select mandatory" name="Profile" id="Profile">
+                  <option value="">Seleccione</option>
+                  <option value="Procesos">Procesos</option>
+                  <option value="Regional">Regional</option>
+                  <option value="Aliado">Aliado</option>
+                </select>
+              </div>
+              <div class="form-group col-2">
+                <label class="textAzulMovistar">Estado</label><br />
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="radio_active" name="Active" value="true" class="custom-control-input">
+                  <label class="custom-control-label" for="radio_active">Activo</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="radio_inactive" name="Active" value="false" class="custom-control-input">
+                  <label class="custom-control-label" for="radio_inactive">Inactivo</label>
+                </div>
+              </div>
+              <div class="form-group col-2">
+                <button class="btn btn-primary" style="margin-top: 31px;" type="submit"><em class="fas fa-save"></em> Guardar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

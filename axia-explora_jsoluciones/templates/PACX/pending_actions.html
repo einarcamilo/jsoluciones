@@ -1,0 +1,28 @@
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-2">
+              <div class="border rounded option-element option-states selected" id="list-open" data-value="1">Abiertos</div>
+            </div>
+            <div class="col-2">
+              <div class="border rounded option-element option-states" id="list-close" data-value="2">Cerrados</div>
+            </div>
+            <div class="col-2">
+              <div class="border rounded option-element option-states" id="list-close" data-value="3">En gestión</div>
+            </div>
+            <div class="col-2 offset-4">
+              <form action="/soluciones/searchers/views/pacx/DownloadActions.asp" method="post">
+                <input type="hidden" name="state" id="state-form" value="1" />
+                <button class="btn btn-success"><em class="fas fa-save"></em>&nbsp;Descarga</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card-body" id="result-statistics"></div>
+      </div>
+    </div>
+  </div>
+</div>

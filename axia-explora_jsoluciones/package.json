@@ -1,0 +1,30 @@
+{
+  "name": "sitios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Diego Leon",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@types/bootstrap": "^5.0.15",
+    "@types/jquery": "^3.5.5",
+    "@types/xss-filters": "0.0.27",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "package-lock.json": "^1.0.0",
+    "package.json": "^2.0.1",
+    "xss-filters": "^1.2.7"
+  }
+}

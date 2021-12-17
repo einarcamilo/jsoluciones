@@ -1,0 +1,1 @@
+export enum States{ "", "Abierto", "Cerrado", "En Gestión" }

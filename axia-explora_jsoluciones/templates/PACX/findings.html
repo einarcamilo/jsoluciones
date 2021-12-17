@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-12">
+      <h6 class="telefonicaBold"><em class="fas fa-archive"></em>&nbsp;&nbsp;Hallazgos</h6>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-8 finding-list">
+      <div class="item-button" id="finding-new"><em class="fas fa-plus"></em></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-9">
+      <h6 class="telefonicaBold"><em class="fas fa-align-left"></em>&nbsp;&nbsp;Descripción</h6>
+      <div id="finding-form">
+        <form id="new-finding">
+          <input type="hidden" name="Id" id="Id" value="" />
+          <input type="hidden" name="Affectation_id" id="Affectation_id" value="" />
+          <input type="hidden" name="Channel" id="Channel_id" value="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col-8">
+                  <input class="form-control mandatory alfanumerico mb-1" placeholder="Nombre hallazgo" maxlength="50" name="name" />
+                </div>
+                <div class="col-4" style="padding-left: 0;" id="cause"></div>
+              </div>
+              <textarea class="form-control mandatory" name="description" placeholder="Descripción hallazgo"></textarea>
+            </div>
+            <div class="col-4">
+              <div class="input-group mb-1">
+                <input readonly="readonly" class="form-control mandatory fecha fill-other" data-target="finding-date" data-max="0" placeholder="Fecha identificación" name="Identification_date" value="" />
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><em class="far fa-calendar-alt"></em></div>
+                </div>
+              </div>
+              <div class="input-group">
+                <input class="form-control mandatory fill-other" 
+                  data-toggle="tooltip" data-placement="bottom" title="Incluir el valor del indicador en que se encuentra en el momento de la revisión"
+                  data-target="finding-impact" data-max="0" placeholder="Impacto KPI" name="Impact" />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="options-list form-row mt-2 row container mt-1 mb-1"></div>
+          <div class="row">
+            <div class="col-12"><button type="submit" id="finding-save-button" class="btn btn-success btn-sm btn-block"><em class="fas fa-save"></em>&nbsp;Guardar</button></div>
+          </div>
+        </form>
+      </div>
+      <div id="finding-detail"></div>
+    </div>
+    <div class="col-3">
+      <div class="detalle-caja">
+        <div class="row mb-2">
+          <div class="col-2 text-center"><em class="fas fa-adjust"></em></div>
+          <div class="col-9 pl-2" id="finding-state">Abierto</div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-2 text-center"><em class="fas fa-calendar"></em></div>
+          <div class="col-9 pl-2"><span id="finding-date" class="finding-date"></span></div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-2 text-center"><em class="fas fa-exclamation-triangle"></em></div>
+          <div class="col-9 pl-2"><span id="finding-impact" class="finding-impact"></span>%</div>
+        </div>
+        <div class="row">
+          <div class="col-2 text-center"><em class="fas fa-user"></em></div>
+          <div class="col-9 pl-2"id="finding-user"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-12"><hr /></div></div>
+  <div id="actions-detail"></div>
+</div>
